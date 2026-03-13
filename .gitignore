@@ -1,0 +1,4 @@
+node_modules/
+data/signals.json
+data/ai_analysis.json
+.env

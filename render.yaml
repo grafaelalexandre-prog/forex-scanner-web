@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: forex-scanner-web
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: TWELVE_API_KEY
+        sync: false
+      - key: TWELVE_EXTRA_KEYS
+        sync: false
+      - key: FINNHUB_KEY
+        value: d6lge5pr01qrq6i2kj3gd6lge5pr01qrq6i2kj40
+      - key: TELEGRAM_TOKEN
+        sync: false
+      - key: TELEGRAM_CHAT_ID
+        sync: false
+      - key: ANTHROPIC_API_KEY
+        sync: false
